@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Studentinfo.Data.NewFolder.NewFolder;
 using Studentinfo.Models;
-using System.Linq.Expressions;
 
 namespace Studentinfo.Data.Repository
 {
