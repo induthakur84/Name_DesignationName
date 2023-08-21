@@ -1,0 +1,30 @@
+﻿<div class="row">
+    <div class="col-9">
+        </br>
+        <h2 class="text-primary">Student List</h2>
+    </div>
+
+    <div class="col-3">
+        </br>
+        <a class="btn btn-info" asp-action="Upsert">
+            <i class="fas fa-plus"></i> &nbsp;Add New Student
+        </a>
+    </div>
+</div>
+<br />
+<br />
+<table id="tblData" class="table table-striped table-bordered table-active">
+    <thead>
+        <tr>
+           
+            <th>  First Name</th>
+            <th> Last Name</th>
+            <th> Class Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+@section scripts
+    {
+    <script src="~/js/category.js"></script>
+}

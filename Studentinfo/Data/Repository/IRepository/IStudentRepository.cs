@@ -5,10 +5,12 @@ namespace Studentinfo.Data.NewFolder.NewFolder
 {
     public interface IStudentRepository
     {
-        Student Get(int id); // for find id and return class
-        IEnumerable<Student> GetAll(                         //this is for display
-            Expression<Func<Student, bool>> filter = null,
-        Func<IQueryable<Student>, IOrderedQueryable<Student>> orderBy = null,
-            string includeProperties = null);
+        IEnumerable<Student> GetAll();
+        void Add(Student student);
+        void Update(Student student);
+        void Remove(int id);
+        Student Get(int id);
+        void Save();
+        IEnumerable<Student> FilterBy(string className, string firstName, string lastName);
     }
 }
